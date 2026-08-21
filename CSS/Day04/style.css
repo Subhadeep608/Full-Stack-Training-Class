@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BR+Guides&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-1{
+  font-family: "Playwrite BR Guides", cursive;
+  font-style: normal;
+}
+.font-2{
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+
+
+
+.text-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.w-30{
+    width: 30%;
+    padding: 14px;
+    background-color: rgb(203, 226, 226);
+    color: black;
+    text-align: justify;
+    /* text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: wavy; */
+    text-transform: capitalize;
+    /* letter-spacing: 5px; */
+    line-height: 40px;
+    word-spacing: 30px;
+    text-shadow: 13px 0px 10px purple;
+}
+
+.font-aw-icon{
+    font-size: 80px;
+    color: yellow;
+}
+
+.d-flex {
+    display: flex;
+    gap: 20px;
+}
+.bx-1{
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day02</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Space Combinator / Descendant Combinator  -->
+    <div>
+        <p>1st paragraph</p>
+        <p>2nd paragraph</p>
+        <p>3rd paragraph</p>
+        <section>
+            <p>4th paragraph</p>
+        </section>
+    </div>
+
+    <!-- Child Combinator / Descendant Combinator  -->
+    <div>
+        <p>1st paragraph</p>
+        <p>2nd paragraph</p>
+        <p>3rd paragraph</p>
+        <section>
+            <p>4th paragraph</p>
+        </section>
+    </div>
+
+    <!-- Subsequent-sibling Combinator (~) in css -->
+    <h4>Subsequent-sibling Combinator (~) in css</h4>
+    <div class="box">
+        <p>Paragraph 1</p>
+        <p class="target">Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+
+
+    <h4>Pseudo Classes</h4>
+    <ul class="product-grid">
+        <!-- Card 1: New Product -->
+        <li class="product-card">
+            <span class="badge">New</span>
+            <h3>Wireless Headphones</h3>
+            <button class="buy-btn">Add to Cart</button>
+        </li>
+
+        <!-- Card 2: Out of Stock -->
+        <li class="product-card out-of-stock">
+            <span class="badge">New</span>
+            <h3>USB-C Cable</h3>
+            <button class="buy-btn" >Out of Stock</button>
+        </li>
+
+        <!-- Card 3: Standard Product -->
+        <li class="product-card">
+            <h3>Smart Watch</h3>
+            <button class="buy-btn">Add to Cart</button>
+        </li>
+    </ul>
+</body>
+
+</html>

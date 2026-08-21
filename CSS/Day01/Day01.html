@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day - 01</title>
+    <link rel="stylesheet" href="Day01.css">
+    <style>
+        /* Internal Css */
+        .firstst-h3 h3 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS -->
+    <!-- 
+    1. CSS is the language we use to style an HTML document.
+    2. CSS describes how HTML elements should be displayed.
+        synatax:- selector{ }
+
+    - There are three way of insterting css, i.e. inline, internal and external.
+    - based on priority, inline css has the highest priority, then internal and then external.
+     -->
+    <div class="firstst-h3" style="height: 200px; width: 400px; background-color: rgb(123, 120, 120);">
+        <!-- External Css -->
+        <h3 style="color: rgb(16, 16, 16);">this my 1st div</h3>
+    </div>
+
+    <!-- CSS Selectors - id -->
+    <P id="myParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempore repudiandae
+        tempora consectetur delectus, quasi nostrum incidunt quae repellat maiores?</P>
+
+    <div class="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis enim quas iste quisquam nihil, quaerat
+        adipisci dolorum eveniet consequatur excepturi vero, totam placeat perferendis, ullam beatae eius! Temporibus
+        aliquam ad et esse ut!
+    </div>
+
+    <hr>
+    <br>
+
+    <div>
+        <h3>Space Combinator ( )</h3>
+
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+    </div>
+
+
+    <br>
+    <hr>
+
+    <div>
+        <h2>Child Combinator (>)</h2>
+
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <container>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+            <p>Paragraph 3 in the div (inside a section element).</p>
+            <h3>heading gggg</h3>
+            <h3>heading gggg</h3>
+            <span>span span span</span>
+        </container>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 3</title>
+</head>
+
+<body>
+    <!-- Html Media tag -->
+    <H2>HTML Video</H2>
+    <video width="320" height="240" autoplay muted loop>
+        <source src="./assets/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <H2>custom Video control button</H2>
+    <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+            <source src="./assets/movie.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 560;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        } 
+    </script>
+
+</body>
+
+</html>

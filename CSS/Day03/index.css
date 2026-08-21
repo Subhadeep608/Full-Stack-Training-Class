@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Using the !important Rule */
+/* p {
+    background-color: yellow !important;
+}
+
+#myid {
+    background-color: blue;
+}
+
+.myclass {
+    background-color: gray;
+} */
+
+/* background */
+.background {
+    height: 400px;
+    width: 60%;
+    background-image: url(https://png.pngtree.com/png-clipart/20241223/original/pngtree-cool-blue-dragon-logo-png-image_18141282.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* border */
+.border-group {
+    width: 600px;
+    background-color: bisque;
+}
+
+.border-group p {
+    margin-bottom: 20px;
+}
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    /* border-style: dashed; */
+    border: 10px dashed white;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.ridge {
+    border-style: ridge;
+}
+
+p.inset {
+    border-style: inset;
+}
+
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+/* CSS Margins */
+.css-margin {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+
+.margin-auto{
+    padding: 20px;
+    width: 400px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.css-padding{
+    padding: 20px 100px;
+    margin: 0 100px 100px;
+    background-color: #d5f3d6;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Position Property</title>
+
+    <style>
+        /* ========================================
+       1. STATIC
+       ======================================== */
+
+        .static-box {
+            position: static;
+
+            /* static is the default position */
+            width: 200px;
+            padding: 20px;
+            background: lightblue;
+        }
+
+
+        /* ========================================
+       2. RELATIVE
+       ======================================== */
+
+        .relative-box {
+            position: relative;
+
+            /* Move the element from its normal position */
+            top: 20px;
+            left: 30px;
+
+            width: 200px;
+            padding: 20px;
+            background: lightgreen;
+        }
+
+
+        /* ========================================
+       3. ABSOLUTE
+       ======================================== */
+
+        .parent {
+            /* Important:
+         The absolute child will use this
+         parent as its positioning reference.
+      */
+            position: relative;
+
+            width: 500px;
+            height: 250px;
+
+            margin-top: 40px;
+
+            background: lightgray;
+        }
+
+        .absolute-box {
+            position: absolute;
+
+            /* Position relative to .parent */
+            top: 20px;
+            right: 20px;
+
+            width: 150px;
+            padding: 20px;
+            background: orange;
+        }
+
+
+        /* ========================================
+       4. FIXED
+       ======================================== */
+
+        .fixed-box {
+            position: fixed;
+
+            /* Position relative to the browser viewport */
+            right: 20px;
+            bottom: 20px;
+
+            padding: 15px 25px;
+
+            background: black;
+            color: white;
+        }
+
+
+        /* ========================================
+       5. STICKY
+       ======================================== */
+
+        .sticky-box {
+            position: sticky;
+
+            /* When scrolling reaches the top,
+         this element sticks to the top */
+            top: 0;
+
+            padding: 20px;
+
+            background: purple;
+            color: white;
+        }
+
+
+        /* Just for creating enough
+       content to demonstrate scrolling */
+        .content {
+            height: 1200px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================================
+       STATIC EXAMPLE
+       ======================================== -->
+
+    <h2>1. Static</h2>
+
+    <div class="static-box">
+        Static Box
+    </div>
+
+
+    <!-- ========================================
+       RELATIVE EXAMPLE
+       ======================================== -->
+
+    <h2>2. Relative</h2>
+
+    <div class="relative-box">
+        Relative Box
+    </div>
+
+
+    <!-- ========================================
+       ABSOLUTE EXAMPLE
+       ======================================== -->
+
+    <h2>3. Absolute</h2>
+
+    <div class="parent">
+
+        <!-- This box is positioned
+         relative to .parent -->
+        <div class="absolute-box">
+            Absolute Box
+        </div>
+
+    </div>
+
+
+    <!-- ========================================
+       STICKY EXAMPLE
+       ======================================== -->
+
+    <h2>4. Sticky</h2>
+
+    <div class="sticky-box">
+        Sticky Box
+    </div>
+
+
+    <!-- ========================================
+       EXTRA CONTENT
+       ======================================== -->
+
+    <div class="content">
+
+        <h2>Scroll the page</h2>
+
+        <p>
+            The sticky element will stick to the top
+            when you scroll.
+        </p>
+
+        <p>
+            The fixed element will remain in the
+            bottom-right corner.
+        </p>
+
+        <p>
+            Keep scrolling to understand the difference.
+        </p>
+
+    </div>
+
+
+    <!-- ========================================
+       FIXED EXAMPLE
+       ======================================== -->
+
+    <div class="fixed-box">
+        Fixed Box
+    </div>
+
+</body>
+
+</html>

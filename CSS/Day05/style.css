@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    border: 2px solid black;
+    padding: 40px 0;
+}
+.box{
+    width: 300px;
+}
+.box1 {
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    background-color: aqua;
+    height: 200px;
+}
+
+.box2 {
+    /* flex-basis: 400px; */
+    /* flex-grow: 2; */
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.box3 {
+    /* flex-grow: 1; */
+    background-color: rgb(194, 21, 145);
+    height: 200px;
+}

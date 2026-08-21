@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Htnl Form</title>
+    <style>
+        /* form */
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .inline {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .inline label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            background: #2563eb;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center; font-size: 55px;">HTML Forms</h2>
+
+
+    <form style="width: 50%;  margin: auto;">
+
+        <!-- Text -->
+        <div class="form-group">
+            <label>Text</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <!-- Number -->
+        <div class="form-group">
+            <label>Number</label>
+            <input type="number" min="1" max="100">
+        </div>
+
+        <!-- Telephone -->
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+91 9876543210">
+        </div>
+
+        <!-- URL -->
+        <div class="form-group">
+            <label>Website</label>
+            <input type="url" placeholder="https://example.com">
+        </div>
+
+        <!-- Search -->
+        <div class="form-group">
+            <label>Search</label>
+            <input type="search" placeholder="Search...">
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date">
+        </div>
+
+        <!-- Time -->
+        <div class="form-group">
+            <label>Time</label>
+            <input type="time">
+        </div>
+
+        <!-- Datetime -->
+        <div class="form-group">
+            <label>Date & Time</label>
+            <input type="datetime-local">
+        </div>
+
+        <!-- Month -->
+        <div class="form-group">
+            <label>Month</label>
+            <input type="month">
+        </div>
+
+        <!-- Week -->
+        <div class="form-group">
+            <label>Week</label>
+            <input type="week">
+        </div>
+
+        <!-- Color -->
+        <div class="form-group">
+            <label>Favorite Color</label>
+            <input type="color">
+        </div>
+
+        <!-- Range -->
+        <div class="form-group">
+            <label>Experience</label>
+            <input type="range" min="0" max="10">
+        </div>
+
+        <!-- File -->
+        <div class="form-group">
+            <label>Upload File</label>
+            <input type="file">
+        </div>
+
+        <!-- Hidden -->
+        <input type="hidden" value="123456">
+
+        <!-- Radio -->
+        <div class="form-group">
+            <label>Gender</label>
+
+            <div class="inline">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Other</label>
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <label>Skills</label>
+
+            <div class="inline">
+                <label><input type="checkbox"> HTML</label>
+                <label><input type="checkbox"> CSS</label>
+                <label><input type="checkbox"> JavaScript</label>
+                <label><input type="checkbox"> React</label>
+            </div>
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+            <label>Country</label>
+
+            <select>
+                <option>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <!-- Multiple Select -->
+        <div class="form-group">
+            <label>Languages</label>
+
+            <select multiple>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Odia</option>
+                <option>Bengali</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label>Message</label>
+
+            <textarea rows="5" placeholder="Write something..."></textarea>
+        </div>
+
+        <!-- Datalist -->
+        <div class="form-group">
+            <label>Choose Browser</label>
+
+            <input list="browsers">
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+                <option value="Safari">
+            </datalist>
+        </div>
+
+        <!-- Readonly -->
+        <div class="form-group">
+            <label>Readonly Input</label>
+            <input type="text" value="Cannot Edit" readonly>
+        </div>
+
+        <!-- Disabled -->
+        <div class="form-group">
+            <label>Disabled Input</label>
+            <input type="text" value="Disabled" disabled>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ddf6f8;
+    font-family: "poppins", sans-serif;
+}
+
+#myParagraph{
+    color: #60F13C;
+    font-size: 12px;
+}
+.mydiv{
+    color: green;
+    font-size: 14px;
+}
+
+/* div p{
+    font-size: 20px;
+    font-weight: 700;
+    color: yellow;
+}
+section p{
+    color: orange;
+}
+
+div > p{
+    color: aqua;
+}
+
+div container>p{
+    color: rgb(126, 11, 11);
+} */
+
+div > container p + h3{
+    color: rgba(166, 43, 43, 0.7);
+}

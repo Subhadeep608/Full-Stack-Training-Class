@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #eb5f5f; */
+}
+
+.target~p {
+    color: chartreuse;
+}
+
+
+/* Pseudo-class */
+.product-grid{
+    background-color: #a04343;
+    padding: 30px;
+    border-radius: 13px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-grid li{
+ background-color: #ccc;
+ padding: 23px;
+}
+/* 1. INTERACTION: Respond to the user's mouse */
+/* Elevates the card when the user hovers over it */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 1);
+}
+
+/* Shrinks the button slightly when it is actively being clicked */
+.buy-btn:active {
+    transform: scale(1.5);
+}
+
+/* 2. ACCESSIBILITY: Keyboard navigation */
+/* Highlights the whole card if a keyboard user 'tabs' to the button inside it */
+.product-card:focus-within {
+    outline: 2px solid #0056b3;
+    outline-offset: 4px;
+}
+
+/* 3. STRUCTURAL: Style based on HTML position */
+/* Creates a subtle zebra-striping effect on the grid items */
+.product-grid li:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Removes bottom margin from the last item (useful for single-column mobile views) */
+.product-grid li:last-child {
+    margin-bottom: 0;
+    border-bottom: 4px solid black;
+}
+
+/* 4. LOGICAL: Advanced target filtering */
+/* Shows a pointer cursor on all cards EXCEPT those marked out-of-stock */
+.product-card:not(.out-of-stock) {
+    cursor: pointer;
+}
+
+/* MODERN CSS: Styles the card differently ONLY if it contains a .badge element */
+.product-card:has(.badge) {
+    border-top: 3px solid #ff4757;
+}
+
