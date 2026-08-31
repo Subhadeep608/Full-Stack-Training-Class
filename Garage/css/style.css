@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grg-icon {
+    border: 1px solid #ddd;
+    height: 42px;
+    width: 42px;
+    display: inline-flex;
+    padding: 11px;
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.grg-slider-wraper img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.hero-contant {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ddd;
+    position: absolute;
+    /* z-index: 2; */
+    height: 180px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    left: 80px;
+    top: 35%;
+    padding: 30px 30px;
+    border-radius: 13px;
+}
