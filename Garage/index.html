@@ -18,9 +18,9 @@
 
 <body>
     <header class="grg-header">
-        <div class="container">
+        <div class="container-fluid p-0">
             <!-- action bar -->
-            <div class="grg-top-action-bar d-flex justify-content-between align-items-center py-2">
+            <div class="grg-top-action-bar px-5 d-flex justify-content-between align-items-center py-2">
                 <div class="grg-social-left">
                     <i class="bi bi-facebook grg-icon"></i>
                     <i class="bi bi-youtube grg-icon"></i>
@@ -28,14 +28,16 @@
                     <i class="bi bi-whatsapp grg-icon"></i>
                 </div>
                 <div class="grg-list-rit">
-                    <span class="small ms-3"><i class="bi bi-geo-alt-fill"></i> 3766 Alton Pkwy, Irvine CA 92618
+                    <span class="small ms-3 text-white"><i class="bi bi-geo-alt-fill"></i> 3766 Alton Pkwy, Irvine CA
+                        92618
                         USA</span>
-                    <span class="small ms-3"><i class="bi bi-telephone"></i> +00 123 456 789</span>
-                    <span class="small ms-3"> <i class="bi bi-alarm"></i> Mon-Sat: 8:00am-6:30pmSun: Closed</span>
+                    <span class="small ms-3 text-white"><i class="bi bi-telephone"></i> +00 123 456 789</span>
+                    <span class="small ms-3 text-white"> <i class="bi bi-alarm"></i> Mon-Sat: 8:00am-6:30pmSun:
+                        Closed</span>
                 </div>
             </div>
             <!-- nav bar -->
-            <div class="grg-top-nav bg-secondary">
+            <div class="grg-top-nav px-5">
                 <nav class="navbar navbar-expand-lg ">
 
                     <a class="navbar-brand" href="#">
@@ -70,8 +72,9 @@
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <form class="d-flex ms-5" role="search">
+                            <input class="form-control rounded-0 " type="search" placeholder="Search"
+                                aria-label="Search" />
                             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                         </form>
                     </div>
@@ -104,19 +107,13 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/slide-2.png" class="d-block w-100" alt="...">
+
+                        <div class=" d-md-block hero-contant">
+                            <h1>Second slide label</h1>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </div>
@@ -124,9 +121,78 @@
 
 
 
-    <footer>
+    <footer class="grg-footer px-5 text-white pt-5">
+        <div class="container-fluid">
+            <div class="row grg-footer-top py-5 mb-5">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="./assets/logo.png" alt="this is a logo" class="img-fluid mb-3">
+                    <ul class="list-unstyled text-white">
+                        <li>
+                            <a href="tel:000123456789" class="text-white">Call. +00123456789</a>
+                        </li>
+                        <li>
+                            <a href="mailto:Email. hello@yourmail.com" class="text-white">Email. hello@yourmail.com</a>
+                        </li>
+                        <li>
+                            <a href="mailto:Email. hello@yourmail.com" class="text-white">329 Queensberry Street, North Melbourne
+                                VIC 3051, Australia.</a>
+                        </li>
+                    </ul>
 
+                    <div class="grg-social-left">
+                        <i class="bi bi-facebook grg-icon"></i>
+                        <i class="bi bi-youtube grg-icon"></i>
+                        <i class="bi bi-instagram grg-icon"></i>
+                        <i class="bi bi-whatsapp grg-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h3 class="text-white pb-2 mb-3">INFORMATION</h3>
+                    <ul class="p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h3 class="text-white pb-2 mb-3">USEFUL LINKS</h3>
+                    <ul class="p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h3 class="text-white pb-2 mb-3">BUSINESS HOURS</h3>
+                    <p>Our support available to help you 24 hours a day, seven days a week.</p>
+                    <ul class="p-0">
+                        <li>Monday - Friday: 8am to 6pm</li>
+                        <li>Saturday: 9am to 5pm</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="m-0">
+            <div class="row align-items-center py-3">
+                <div class="col-lg-6 col-md-12 col-12">  
+                    <p >Designed by PPM Infotech. Powered byPPM.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">  
+                    <ul class="p-0 d-flex justify-content-lg-end justify-content-md-center justify-content-center gap-5 m-0">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+
+
+
+
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

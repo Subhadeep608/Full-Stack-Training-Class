@@ -4,8 +4,43 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    color: #fff !important;
+}
+a:hover{
+    color:#f30000 !important;
+}
+ul li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+h3{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+p{
+    margin: 0 !important;
+}
+
 .grg-icon {
     border: 1px solid #ddd;
+    color: #fff;
     height: 42px;
     width: 42px;
     display: inline-flex;
@@ -13,10 +48,66 @@
     font-size: 18px;
     margin-right: 10px;
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.grg-icon:hover {
+    border: 1px solid #f30000;
+    color: #f30000;
+    cursor: pointer;
+}
+.grg-header {
+    position: relative;
+    z-index: 9;
+}
+
+.grg-hero-sec {
+    margin-top: -121px;
+    z-index: 0;
+    position: relative;
+}
+
+.grg-top-nav ul li a {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0 !important;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.grg-top-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f30000;
+    transition: width 0.3s ease;
+}
+
+.grg-top-nav .active {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #f30000;
+}
+
+.grg-top-nav ul li a:hover::after {
+    width: 100%;
+}
+
+.grg-top-nav ul {
+    gap: 40px;
+}
+
+.grg-top-action-bar {
+    background-color: rgba(17, 17, 17, 0.7);
 }
 
 .grg-slider-wraper img {
-    height: 500px;
+    height: 540px;
     object-fit: cover;
 }
 
@@ -35,7 +126,33 @@
     flex-direction: column;
     justify-content: center;
     left: 80px;
-    top: 35%;
+    top: 50%;
     padding: 30px 30px;
     border-radius: 13px;
+}
+
+
+/* footer css */
+.grg-footer {
+    background-color: #111111;
+}
+/* .grg-footer-top a {
+    color: #fff !important;
+} */
+.grg-footer-top h3{
+    position: relative;
+}
+.grg-footer-top h3::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #f30000;
+}
+.grg-footer-top ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px !important;
 }
