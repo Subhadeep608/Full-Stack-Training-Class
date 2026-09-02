@@ -15,27 +15,42 @@ a {
     transition: all 0.3s ease;
     color: #fff !important;
 }
-a:hover{
-    color:#f30000 !important;
+
+a:hover {
+    color: #f30000 !important;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 36px;
     font-weight: 600;
 }
-h3{
+
+h3 {
     font-size: 18px !important;
     font-weight: 500 !important;
 }
-p{
+
+p {
     margin: 0 !important;
+}
+
+.grg-title-bx .line {
+    width: 40px;
+    margin-top: 20px;
+    border-top: 2px solid #df1f3d;
 }
 
 .grg-icon {
@@ -50,11 +65,13 @@ p{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .grg-icon:hover {
     border: 1px solid #f30000;
     color: #f30000;
     cursor: pointer;
 }
+
 .grg-header {
     position: relative;
     z-index: 9;
@@ -136,13 +153,15 @@ p{
 .grg-footer {
     background-color: #111111;
 }
+
 /* .grg-footer-top a {
     color: #fff !important;
 } */
-.grg-footer-top h3{
+.grg-footer-top h3 {
     position: relative;
 }
-.grg-footer-top h3::after{
+
+.grg-footer-top h3::after {
     content: " ";
     position: absolute;
     bottom: 0;
@@ -151,6 +170,7 @@ p{
     height: 2px;
     background-color: #f30000;
 }
+
 .grg-footer-top ul {
     display: flex;
     flex-direction: column;
