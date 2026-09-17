@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Widget</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* MAIN CHAT APP*/
+        .chat-app-sec {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* CONTACT US BUTTON  */
+        .contact-btn {
+            height: 68px;
+            min-width: 220px;
+            background: #ff9418;
+            color: #000;
+            border: 2px solid #fff;
+            border-radius: 40px;
+            font-size: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background: #ff8500;
+            transform: translateY(-2px);
+        }
+
+        /* CROSS BUTTON  */
+        .chat-toggle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #ff9418;
+            color: #000;
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            transition: all 0.3s ease;
+        }
+
+        .chat-toggle:hover {
+            background: #ff8500;
+            transform: scale(1.05);
+        }
+
+        /*   MENU   */
+        .chat-menu {
+            position: absolute;
+            right: 0;
+            bottom: 80px;
+            width: 300px;
+            background: #f8f8fa;
+            border: 1px solid #e5e5e5;
+            border-radius: 28px;
+            padding: 18px 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        /*   SHOW MENU ON HOVER    */
+        /* .chat-app-sec:hover .chat-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        } */
+        .show-chat-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /*   MENU ITEMS   */
+        .chat-menu-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 15px 15px;
+            text-decoration: none;
+            color: #202020;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .chat-menu-item:hover {
+            background: #eeeeef;
+            color: #000;
+        }
+
+        /* ICON */
+        .chat-menu-item i {
+            width: 30px;
+            font-size: 25px;
+            color: #222;
+        }
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media (max-width: 767px) {
+            .chat-app-sec {
+                right: 15px;
+                bottom: 15px;
+            }
+
+            .contact-btn {
+                min-width: 150px;
+                height: 58px;
+                font-size: 19px;
+            }
+
+            .chat-toggle {
+                width: 60px;
+                height: 60px;
+                font-size: 27px;
+            }
+
+            .chat-menu {
+                width: 270px;
+                bottom: 70px;
+                border-radius: 22px;
+            }
+
+            .chat-menu-item {
+                font-size: 19px;
+                padding: 13px;
+            }
+
+            .chat-menu-item i {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!--  CONTACT / CHAT WIDGET  -->
+    <div class="chat-app-sec">
+        <!-- Popup Menu -->
+        <div class="chat-menu">
+            <a href="#" class="chat-menu-item">
+                <i class="bi bi-envelope-paper"></i>
+                <span>Request a quote</span>
+            </a>
+            <a href="sms:+61400000000" class="chat-menu-item">
+                <i class="bi bi-chat-fill"></i>
+                <span>Text us</span>
+            </a>
+            <a href="tel:+61400000000" class="chat-menu-item">
+                <i class="bi bi-telephone-fill"></i>
+                <span>Call us</span>
+            </a>
+        </div>
+
+        <!-- Contact Us -->
+        <button class="contact-btn">
+            Contact Us
+        </button>
+        <!-- Toggle Button -->
+        <button class="chat-toggle" id="chatToggle">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ===================================== -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const chatToggle = document.getElementById("chatToggle");
+            const chatApp = document.querySelector(".chat-app-sec");
+
+            chatToggle.addEventListener("click", function () {
+
+                // Open / close menu
+                chatApp.classList.toggle("active");
+
+                // Change icon
+                const icon = chatToggle.querySelector("i");
+
+                if (chatApp.classList.contains("active")) {
+
+                    icon.classList.remove("fa-comments");
+                    icon.classList.add("fa-xmark");
+
+                } else {
+
+                    icon.classList.remove("fa-xmark");
+                    icon.classList.add("fa-comments");
+
+                }
+
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
