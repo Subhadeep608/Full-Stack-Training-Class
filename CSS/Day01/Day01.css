@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,11 +6,12 @@
     font-family: "poppins", sans-serif;
 }
 
-#myParagraph{
+#myParagraph {
     color: #60F13C;
     font-size: 12px;
 }
-.mydiv{
+
+.mydiv {
     color: green;
     font-size: 14px;
 }
@@ -32,6 +33,6 @@ div container>p{
     color: rgb(126, 11, 11);
 } */
 
-div > container p + h3{
+div>container p+h3 {
     color: rgba(166, 43, 43, 0.7);
 }

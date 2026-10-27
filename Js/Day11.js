@@ -57,8 +57,8 @@
     // })
     // console.log(even);
 
-    const fruits = ["Apple", "Banana", "Mango", "Avocado"];
-    let fruitsStartWithA = fruits.filter((element)=>{
-        return element.startsWith("A");
-    });
-    console.log(fruitsStartWithA);
+    // const fruits = ["Apple", "Banana", "Mango", "Avocado"];
+    // let fruitsStartWithA = fruits.filter((element)=>{
+    //     return element.startsWith("A");
+    // });
+    // console.log(fruitsStartWithA);
