@@ -79,3 +79,26 @@
 // let maxValue = Math.max(...num);
 // console.log(minValue);
 // console.log(maxValue);
+
+
+// let str = "subhadeep";
+// let spredStr = [...str]; // ['s', 'u', 'b', 'h', 'a', 'd', 'e', 'e', 'p'];
+// console.log(spredStr);
+
+// // => It helps converting a string into an Array. 
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let arr3 = [...arr1, ...arr2];
+// console.log(arr3);
+
+
+// Spread witrh object literas
+// let data = {
+//     name: "subham",
+//     email: "subham#gmal.com",
+//     password: "abcd"
+// }
+
+// let dataCopy = {...data, id: 123};
+// console.log(dataCopy);
