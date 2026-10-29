@@ -36,5 +36,3 @@ nameElement[0].innerHTML = 'PPM-Infotech';
 console.log(nameElement);
 
 
-// 2. Selecting elements with querySelector()
-// querySelector() accepts any CSS selector and returns the first matching element.
